@@ -41,15 +41,27 @@ bibliografia
 
 - appello
 data
-ora
+ora inizio
+ora fine
 materia
 responsabile
-
+tipo      \\orale o scritto
 
 
 
 - studente
+nome
+cognome
+numero matricola
+anni
+residenza
+documento
+anno accademico
+bonus
+
 
 
 
 - esito
+voto
+cfu
