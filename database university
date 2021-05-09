@@ -1,10 +1,18 @@
 
 
 - dipartimento
+nome
+luogo
+info
+coordinate
 
 
 
 - corso di laurea
+tipo      //triennale o magistrale
+nome
+descrizione
+
 
 
 
@@ -20,7 +28,7 @@
 
 
 
-- studento
+- studente
 
 
 
