@@ -12,11 +12,16 @@ coordinate
 tipo      //triennale o magistrale
 nome
 descrizione
-
+edificio
 
 
 
 - corso
+nome
+responsabile
+data inizio
+data fine
+
 
 
 
