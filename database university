@@ -21,15 +21,30 @@ nome
 responsabile
 data inizio
 data fine
-
+materiale didattico
 
 
 
 - insegnante
+id
+nome
+cognome
+nascita
+residenza
+età
+competenza
+esperienza
+stipendio
+bibliografia
 
 
 
 - appello
+data
+ora
+materia
+responsabile
+
 
 
 
