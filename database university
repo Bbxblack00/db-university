@@ -20,6 +20,8 @@ edificio: varchar, default(sede principale)
 
 
 - corso
+id: primary_key, BIG_INT, not null, unique
+fk_corsodilaurea: BIG_INT, not null, unique
 nome: varchar, not null, unique
 responsabile: varchar, not null
 data inizio: date, not null
