@@ -40,19 +40,19 @@ bibliografia: text, null
 
 
 - appello
-data: date
-ora inizio: time
-ora fine: time
-materia: varchar
-responsabile: varchar
-tipo: varchar      \\orale o scritto
+data: date, not null
+ora inizio: time, not null
+ora fine: time, not null
+materia: varchar, not null
+responsabile: varchar, not null
+tipo: varchar, not null      \\orale o scritto
 
 
 
 - studente
-nome: varchar
-cognome: varchar
-numero matricola: int
+nome: varchar, not null
+cognome: varchar, not null
+numero matricola: int, not null, unique, auto_increment
 anni: tinyint
 residenza: text
 documento: varchar      //carta d'identità, passaporto, certificato di nascita
