@@ -62,5 +62,6 @@ bonus: text, null
 
 
 - esito
-voto: tinyint, null
-cfu: tinyint, null
+id primary_key
+fk_studente
+fk_appello
