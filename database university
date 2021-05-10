@@ -1,41 +1,41 @@
 
 
 - dipartimento
-nome: varchar, not null
-luogo: text
-info: text
-coordinate: text;
+nome: varchar, not null, unique
+luogo: text, not null, unique
+info: text, not null
+coordinate: text, not null, unique
 
 
 
 - corso di laurea
-tipo: varchar      //triennale o magistrale
-nome: varchar
-descrizione: text
-edificio: varchar
+tipo: varchar, not null      //triennale o magistrale
+nome: varchar, not null, unique
+descrizione: text, not null
+edificio: varchar, default(sede principale)
 
 
 
 - corso
-nome: varchar
-responsabile: varchar
-data inizio: date
-data fine: date
-materiale didattico: text
+nome: varchar, not null, unique
+responsabile: varchar, not null
+data inizio: date, not null
+data fine: date, default(last day of september)
+materiale didattico: text, null
 
 
 
 - insegnante
-id: medium
-nome: varchar
-cognome: varchar
-nascita: date
-residenza: text
-età: tinyint
-competenza: text
-esperienza: text
-stipendio: float
-bibliografia: text
+id: medium, not null, unique, auto_increment
+nome: varchar, not null
+cognome: varchar, not null
+nascita: date, not null
+residenza: text, not null
+età: tinyint, not null
+competenza: text, not null
+esperienza: text, not null
+stipendio: float, not null
+bibliografia: text, null
 
 
 
