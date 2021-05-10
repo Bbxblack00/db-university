@@ -1,7 +1,7 @@
 
 
 - dipartimento
-id: primary_key, BIG_INT
+id: primary_key, BIG_INT, not null, unique
 nome: varchar, not null, unique
 luogo: text, not null, unique
 info: text, not null
@@ -10,6 +10,8 @@ coordinate: text, not null, unique
 
 
 - corso di laurea
+id: primary_key, BIG_INT, not null, unique
+fk_dipartimento: BIG_INT, not null, unique
 tipo: varchar, not null      //triennale o magistrale
 nome: varchar, not null, unique
 descrizione: text, not null
