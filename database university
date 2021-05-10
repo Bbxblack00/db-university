@@ -1,7 +1,7 @@
 
 
 - dipartimento
-nome: varchar
+nome: varchar, not null
 luogo: text
 info: text
 coordinate: text;
