@@ -1,6 +1,7 @@
 
 
 - dipartimento
+id: primary_key, BIG_INT
 nome: varchar, not null, unique
 luogo: text, not null, unique
 info: text, not null
