@@ -53,14 +53,14 @@ tipo: varchar, not null      \\orale o scritto
 nome: varchar, not null
 cognome: varchar, not null
 numero matricola: int, not null, unique, auto_increment
-anni: tinyint
-residenza: text
-documento: varchar      //carta d'identità, passaporto, certificato di nascita
-anno accademico: tinyint
-bonus: text
+anni: tinyint, not null
+residenza: text, null
+documento: varchar, not null      //carta d'identità, passaporto, certificato di nascita
+anno accademico: tinyint, not null
+bonus: text, null
 
 
 
 - esito
-voto: tinyint
-cfu: tinyint
+voto: tinyint, null
+cfu: tinyint, null
