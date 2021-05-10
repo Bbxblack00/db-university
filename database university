@@ -1,18 +1,18 @@
 
 
 - dipartimento
-nome
-luogo
-info
-coordinate
+nome: varchar
+luogo: text
+info: text
+coordinate: text;
 
 
 
 - corso di laurea
-tipo      //triennale o magistrale
-nome
-descrizione
-edificio
+tipo: varchar      //triennale o magistrale
+nome: varchar
+descrizione: text
+edificio: varchar
 
 
 
@@ -26,42 +26,41 @@ materiale didattico: text
 
 
 - insegnante
-id: varchar
+id: medium
 nome: varchar
 cognome: varchar
 nascita: date
 residenza: text
-età
-competenza
-esperienza
-stipendio
-bibliografia
+età: tinyint
+competenza: text
+esperienza: text
+stipendio: float
+bibliografia: text
 
 
 
 - appello
-data
-ora inizio
-ora fine
-materia
-responsabile
-tipo      \\orale o scritto
+data: date
+ora inizio: time
+ora fine: time
+materia: varchar
+responsabile: varchar
+tipo: varchar      \\orale o scritto
 
 
 
 - studente
-nome
-cognome
-numero matricola
-anni
-residenza
-documento
-anno accademico
-bonus
-
+nome: varchar
+cognome: varchar
+numero matricola: int
+anni: tinyint
+residenza: text
+documento: varchar      //carta d'identità, passaporto, certificato di nascita
+anno accademico: tinyint
+bonus: text
 
 
 
 - esito
-voto
-cfu
+voto: tinyint
+cfu: tinyint
