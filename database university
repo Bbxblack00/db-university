@@ -55,6 +55,7 @@ tipo: varchar, not null      \\orale o scritto
 
 
 - studente
+id: primary_key, BIG_INT, not null, unique
 nome: varchar, not null
 cognome: varchar, not null
 numero matricola: int, not null, unique, auto_increment
