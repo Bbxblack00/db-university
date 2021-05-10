@@ -17,20 +17,20 @@ edificio
 
 
 - corso
-nome
-responsabile
-data inizio
-data fine
-materiale didattico
+nome: varchar
+responsabile: varchar
+data inizio: date
+data fine: date
+materiale didattico: text
 
 
 
 - insegnante
-id
-nome
-cognome
-nascita
-residenza
+id: varchar
+nome: varchar
+cognome: varchar
+nascita: date
+residenza: text
 età
 competenza
 esperienza
