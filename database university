@@ -45,6 +45,7 @@ bibliografia: text, null
 
 
 - appello
+id: primary_key, BIG_INT, not null, unique, auto_increment
 data: date, not null
 ora inizio: time, not null
 ora fine: time, not null
@@ -55,12 +56,11 @@ tipo: varchar, not null      \\orale o scritto
 
 
 - studente
-id: primary_key, BIG_INT, not null, unique
 nome: varchar, not null
 cognome: varchar, not null
-numero matricola: int, not null, unique, auto_increment
+numero matricola: primary_key, BIG_INT, not null, unique, auto_increment
 anni: tinyint, not null
-residenza: text, null
+residenza: text, not null
 documento: varchar, not null      //carta d'identità, passaporto, certificato di nascita
 anno accademico: tinyint, not null
 bonus: text, null
